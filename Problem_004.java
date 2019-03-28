@@ -2,9 +2,9 @@ public class Problem_004 {
 
     public static void main(String[] args) {
         int largestProduct = -1;
-        for (int i = 100; i < 1_000; i++) {
-            for (int j = 100; j < 1_000; j++) {
-                int product = i * j;
+        for (int multiplicand = 100; multiplicand < 1_000; multiplicand++) {
+            for (int multiplier = 100; multiplier < 1_000; multiplier++) {
+                int product = multiplicand * multiplier;
                 if (isPalindrome(product) && product > largestProduct) {
                     largestProduct = product;
                 }
